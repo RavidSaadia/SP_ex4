@@ -3,7 +3,6 @@
 #include "trieh.h"
 
 
-
 int main(int argc, char *argv[]) {
 
     node root;
@@ -17,17 +16,18 @@ int main(int argc, char *argv[]) {
     }
     if (argc != 2 || argv[1][0] != 'r') {
         node *node_pointer = &root;
-        while (node_pointer->i < 26) {
-
+        while (node_pointer) {
             if (node_pointer->children[node_pointer->i]) {
-                counter = node_pointer->children[node_pointer->i]->count;
-                if (counter != 0) {
-                    printf("%s\t%lu\n", node_pointer->word, counter);
-                }
                 node_pointer = node_pointer->children[node_pointer->i];
-
             } else {
                 next_child(node_pointer);
+                if (node_pointer->i == 26) {
+                    node_pointer = node_pointer->father;
+                }
+            }
+            counter = node_pointer->count;
+            if (counter != 0) {
+                printf("%s\t%lu\n", node_pointer->word, counter);
             }
         }
     } else {

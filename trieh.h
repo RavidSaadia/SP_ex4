@@ -14,6 +14,7 @@ typedef struct node {
     struct node *children[NUM_LETTERS];
     int i;
     char word[WORD_LEN];
+    struct node *father;
 } node;
 
 int asci(char i);
