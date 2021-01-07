@@ -25,4 +25,14 @@ void add_word(node *root, char word[]);
 
 void next_child(node *node);
 
+int asci2(char i);
+
+
+node getInput2(node *root);
+
+void add_word2(node *root, char word[]);
+
+
+
+
 #endif //EX4_TRIEH_H
