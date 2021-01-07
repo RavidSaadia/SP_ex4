@@ -11,6 +11,8 @@ stdio.h
 -
 argz.h
 -
+malloc.h
+-
 trieh.h
 /home/ravid/CLionProjects/Ex4/trieh.h
 
