@@ -14,6 +14,7 @@
     <list default="true" id="27d5fc22-e984-40b3-bf25-5adbcb3591e5" name="Default Changelist" comment="first push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trie.c" beforeDir="false" afterPath="$PROJECT_DIR$/Trie.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/Trie.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/Trie.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Ex4" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Ex4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
@@ -45,10 +46,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+    <property name="settings.editor.splitter.proportion" value="0.31333333" />
   </component>
   <component name="RunManager" selected="CMake Application.Ex4">
-    <configuration name="Ex4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$/input.txt" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ex4" TARGET_NAME="Ex4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ex4" RUN_TARGET_NAME="Ex4">
+    <configuration name="Ex4" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="r" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$/input.txt" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ex4" TARGET_NAME="Ex4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ex4" RUN_TARGET_NAME="Ex4">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -64,11 +66,6 @@
         <envs />
       </dockDockBuild>
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <list>
       <item itemvalue="CMake Application.Ex4" />
@@ -97,7 +94,9 @@
       <workItem from="1609970997035" duration="929000" />
       <workItem from="1610027266519" duration="12467000" />
       <workItem from="1610044628373" duration="631000" />
-      <workItem from="1610045324077" duration="5750000" />
+      <workItem from="1610045324077" duration="8099000" />
+      <workItem from="1610209847319" duration="6214000" />
+      <workItem from="1610216285459" duration="1704000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <created>1609960151855</created>
@@ -113,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610047971036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="good commit. left to do the 'r' input">
+      <created>1610051481109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610051481109</updated>
+    </task>
+    <task id="LOCAL-00004" summary="good version before memory check.">
+      <created>1610214986640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610214986640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,19 +142,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first push" />
     <MESSAGE value="good commit. left to do the 'r' input" />
-    <option name="LAST_COMMIT_MESSAGE" value="good commit. left to do the 'r' input" />
+    <MESSAGE value="good version before memory check." />
+    <option name="LAST_COMMIT_MESSAGE" value="good version before memory check." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>25</line>
-          <option name="timeStamp" value="12" />
+          <line>82</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,12 +7,12 @@
 #define NUM_LETTERS ((int) 26)
 #define WORD_LEN  30
 
-
 typedef struct node {
     char letter;
     long unsigned int count;
     struct node *children[NUM_LETTERS];
     int i;
+    int j;
     char word[WORD_LEN];
     struct node *father;
 } node;
@@ -25,14 +25,8 @@ void add_word(node *root, char word[]);
 
 void next_child(node *node);
 
-int asci2(char i);
+void start_from_z(node *root);
 
-
-node getInput2(node *root);
-
-void add_word2(node *root, char word[]);
-
-
-
+void prev_child(node *node);
 
 #endif //EX4_TRIEH_H
