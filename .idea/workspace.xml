@@ -11,15 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27d5fc22-e984-40b3-bf25-5adbcb3591e5" name="Default Changelist" comment="first push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trie.c" beforeDir="false" afterPath="$PROJECT_DIR$/Trie.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/Trie.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/Trie.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Ex4" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Ex4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    <list default="true" id="27d5fc22-e984-40b3-bf25-5adbcb3591e5" name="Default Changelist" comment="almost done">
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trieh.h" beforeDir="false" afterPath="$PROJECT_DIR$/trieh.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,7 @@
       <workItem from="1610044628373" duration="631000" />
       <workItem from="1610045324077" duration="8099000" />
       <workItem from="1610209847319" duration="6214000" />
-      <workItem from="1610216285459" duration="1704000" />
+      <workItem from="1610216285459" duration="2271000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <created>1609960151855</created>
@@ -126,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610214986640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="almost done">
+      <created>1610218027544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610218027544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,17 +148,7 @@
     <MESSAGE value="first push" />
     <MESSAGE value="good commit. left to do the 'r' input" />
     <MESSAGE value="good version before memory check." />
-    <option name="LAST_COMMIT_MESSAGE" value="good version before memory check." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>82</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>

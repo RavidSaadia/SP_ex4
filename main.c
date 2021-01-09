@@ -5,8 +5,8 @@
 
 
 node getInput(node *root);
-
 void start_from_a(node *root);
+void start_from_z(node *root);
 
 int main(int argc, char *argv[]) {
     node root;
@@ -19,6 +19,47 @@ int main(int argc, char *argv[]) {
     }
 //    free(&root);
     return 0;
+}
+
+node getInput(node *root) {
+    int flag = 1;
+    while (flag) {
+        char buffer = 'a';
+        char *word = 0;
+        size_t cur_len = 0;
+
+        while (1) {
+            buffer = getc(stdin);
+            if (buffer == EOF) {
+                flag = 0;
+                break;
+            }
+            if ((buffer >= 'a' && buffer <= 'z') || (buffer >= 'A' && buffer <= 'Z')) {
+                char *extra = realloc(word, cur_len + 1);
+                if (extra == NULL) {
+                    perror("realloc() failed!\n");
+                    break;
+                }
+                word = extra;
+                strcpy(word + cur_len, &buffer);
+                cur_len += 1;
+            } else if (buffer == '\n' || buffer == '\t' || buffer == '\r' || buffer == ' ') {
+                break;
+            }
+        }
+
+        // add '/0' in teh end of the current word
+        char *extra = realloc(word, cur_len + 1);
+        if (extra == NULL) {
+            perror("realloc() failed!\n");
+            break;
+        }
+        word = extra;
+        word[cur_len] = '\0';
+        add_word(root, word);
+        free(word);
+    }
+    return (*root);
 }
 
 void start_from_a(node *root) {
@@ -40,7 +81,7 @@ void start_from_a(node *root) {
         }
         unsigned long counter = node_pointer->count;
         if (counter != 0) {
-            printf("%s\t%lu\n", node_pointer->word, counter);
+            printf("%s %lu\n", node_pointer->word, counter);
             node_pointer->count = 0;
         }
     }
@@ -56,7 +97,7 @@ void start_from_z(node *root) {
             if (node_pointer->j == -1) {
                 unsigned long counter = node_pointer->count;
                 if (counter != 0) {
-                    printf("%s\t%lu\n", node_pointer->word, counter);
+                    printf("%s %lu\n", node_pointer->word, counter);
                     node_pointer->count = 0;
                 }
                 node *temp = node_pointer;
@@ -69,41 +110,4 @@ void start_from_z(node *root) {
             }
         }
     }
-}
-
-node getInput(node *root) {
-    int flag = 1;
-    while (flag) {
-        char buffer = 'a';
-        char *word = 0;
-        size_t cur_len = 0;
-
-        while (1) {
-            buffer = getc(stdin);
-            if (buffer == EOF) {
-                flag = 0;
-                break;
-            }
-            if ((buffer >= 'a' && buffer <= 'z') || (buffer >= 'A' && buffer <= 'Z')) {
-                char *extra = realloc(word, cur_len + 1);
-                if (extra == NULL) {
-                    perror("realloc() failed!\n");
-                }
-                word = extra;
-                strcpy(word + cur_len, &buffer);
-                cur_len += 1;
-            } else if (buffer == '\n' || buffer == '\t' || buffer == '\r' || buffer == ' ') {
-                break;
-            }
-        }
-
-        // add '/0' in teh end of the current word
-        char *extra = realloc(word, cur_len + 1);
-        if (extra == NULL) break;
-        word = extra;
-        word[cur_len] = '\0';
-        add_word(root, word);
-        free(word);
-    }
-    return (*root);
 }
