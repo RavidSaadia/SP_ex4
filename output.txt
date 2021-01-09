@@ -1,0 +1,14 @@
+a 1
+aa 1
+aaa 2
+aba 1
+dana 1
+lior 1
+maya 2
+mayaaa 1
+mosh 1
+moshe 2
+pip 3 
+pp 1
+yosef 3
+yossi 1
