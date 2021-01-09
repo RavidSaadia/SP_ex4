@@ -10,7 +10,6 @@
 
 void init_trie(node *n) {
     n->count = 0;
-    n->letter = '\0';
     n->i = 0;
     n->j = 25;
     n->father = NULL;
@@ -35,7 +34,6 @@ void add_word(node *root, char word[]) {
                 exit(-1);
             }
             memset(new_child, 0, sizeof(struct node));
-            new_child->letter = c;
             new_child->j = 25;
             memset(new_child->word, 0, WORD_LEN);
             strcpy(new_child->word, trie_pointer->word);

@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/ravid/CLionProjects/Ex4/main.c
-stdio.h
--
+/home/ravid/CLionProjects/Ex4/Trie.c
 argz.h
 -
-malloc.h
+stdlib.h
+-
+ctype.h
+-
+stdio.h
 -
 trieh.h
 /home/ravid/CLionProjects/Ex4/trieh.h

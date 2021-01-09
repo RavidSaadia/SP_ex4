@@ -4,10 +4,6 @@
 #include "trieh.h"
 
 
-node getInput(node *root);
-void start_from_a(node *root);
-void start_from_z(node *root);
-
 int main(int argc, char *argv[]) {
     node root;
     init_trie(&root);
@@ -17,19 +13,18 @@ int main(int argc, char *argv[]) {
     } else {
         start_from_z(&root);
     }
-//    free(&root);
     return 0;
 }
 
 node getInput(node *root) {
     int flag = 1;
     while (flag) {
-        char buffer = 'a';
+        char buffer;
         char *word = 0;
         size_t cur_len = 0;
 
         while (1) {
-            buffer = getc(stdin);
+            buffer = (char) getc(stdin);
             if (buffer == EOF) {
                 flag = 0;
                 break;
@@ -41,7 +36,7 @@ node getInput(node *root) {
                     break;
                 }
                 word = extra;
-                strcpy(word + cur_len, &buffer);
+                word[cur_len] = buffer;
                 cur_len += 1;
             } else if (buffer == '\n' || buffer == '\t' || buffer == '\r' || buffer == ' ') {
                 break;
